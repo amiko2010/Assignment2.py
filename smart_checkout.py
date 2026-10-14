@@ -1,5 +1,5 @@
 
-cart_total =  0
+cart_total =  200
 
 user_status = "vip"
 
@@ -17,12 +17,10 @@ discount = 0
 if is_account_active == False:
     print("ანგარიში დაბლოკილია. შეკვეთა ვერ დამუშავდება.")
 
-else:
-    if cart_total <= 0:
+elif cart_total <= 0:
         print("შეცდომა")
-    else:
-           
-
+else:
+        
         if user_status =="vip":
             discount = 20
             if loyalty_points >= 500:
